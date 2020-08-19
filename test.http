@@ -1,0 +1,21 @@
+@url=http://localhost:3000/ 
+### 查询所有数据
+GET {{url}}products
+
+### 添加数据
+POST {{url}}products
+Content-Type: application/json
+
+{
+    "title" : "今天天气真好啊"
+}
+
+### 修改指定数据
+PUT {{url}}products/5f3cacc1932b841ce4f912a8
+Content-Type: application/json
+
+{
+    "title" : "产品20"
+}
+### 删除指定数据
+DELETE {{url}}products/5f3c90739956e8121c30b9de

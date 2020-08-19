@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatum nobis quisquam modi assumenda
+        maxime facilis earum reiciendis minus harum? Accusamus veritatis minus nam. Harum omnis, praesentium dignissimos
+        id saepe repudiandae excepturi.</h3>
+    <script>
+        fetch("http://localhost:3000/products").then(res => res.json()).then(data => {
+            console.log(data);
+        })
+    </script>
+</body>
+
+</html>
